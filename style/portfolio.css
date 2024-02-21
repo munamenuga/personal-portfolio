@@ -1,12 +1,11 @@
 :root {
   --branding-color: #f8def1;
-  --secondary-color: #443e46;
+  --secondary-color: #000000;
   --heading-font-family: "Playfair", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -19,6 +18,16 @@ h1 {
   font-family: var(--heading-font-family);
   font-size: 76px;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 54px;
+}
+
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .hero {
@@ -49,4 +58,23 @@ h1 {
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
+}
+
+.btn-branding:hover {
+  background: white;
+  color: black;
+}
+
+.btn-outline {
+  color: black;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 20px;
+}
+
+.btn-outline:hover {
+  background: black;
+  color: white;
 }

@@ -21,13 +21,17 @@ h1 {
 }
 
 h2 {
-  font-size: 54px;
+  font-size: 34px;
 }
 
 p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+}
+
+.project-description {
+  padding: 15px;
 }
 
 .hero {
@@ -77,4 +81,20 @@ p {
 .btn-outline:hover {
   background: black;
   color: white;
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 23px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .btn-outline {
+    padding: 6px 10px;
+
+  }
 }

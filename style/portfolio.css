@@ -30,6 +30,11 @@ p {
   line-height: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .project-description {
   padding: 1px 6px 4px 3px;
 }

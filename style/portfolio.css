@@ -31,7 +31,29 @@ p {
 }
 
 .project-description {
-  padding: 15px;
+  padding: 1px 6px 4px 3px;
+}
+
+.project-image {
+  padding: 25px;
+}
+
+.work-info {
+  background-color: var(--branding-color);
+  border: 1px solid var(--secondary-color);
+  margin: 60px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.work-description {
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.work-info-description {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .hero {
@@ -64,9 +86,11 @@ p {
   padding: 12px 20px;
 }
 
+.btn-work-info:hover,
 .btn-branding:hover {
   background: white;
   color: black;
+  border-color: #000000;
 }
 
 .btn-outline {
@@ -83,6 +107,22 @@ p {
   color: white;
 }
 
+.btn-work-info {
+  background: var(--secondary-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 25px 30px 0px 30px;
+  border: 0;
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
+  padding-top: 15px;
+}
+
 @media (max-width: 576px) {
   h2 {
     font-size: 23px;
@@ -95,6 +135,13 @@ p {
 
   .btn-outline {
     padding: 6px 10px;
+  }
 
+  .work-info {
+    display: none;
+  }
+
+  .work-info-description {
+    display: none;
   }
 }

@@ -23,6 +23,7 @@ h1 {
 
 h2 {
   font-size: 34px;
+  font-weight: bold;
 }
 
 p {
@@ -83,6 +84,28 @@ a {
   line-height: 1.5;
 }
 
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section-content {
+  margin: 30px;
+}
+
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+  font-family: var(--default-font-family);
+}
+
+.about-image {
+  border-radius: 8px;
+}
+
 .btn-branding {
   background: var(--secondary-color);
   border-radius: 4px;
@@ -138,15 +161,26 @@ footer {
     font-size: 23px;
   }
 
+  .project-description {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
   p {
     font-size: 12px;
     line-height: 20px;
   }
 
   .hero {
-  padding: 80px 10px;
-}
-  
+    padding: 80px 10px;
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+
   .btn-outline {
     padding: 6px 10px;
   }

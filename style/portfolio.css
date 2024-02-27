@@ -1,6 +1,7 @@
 :root {
   --branding-color: #f8def1;
   --secondary-color: #000000;
+  --accent-color: #f307b4;
   --heading-font-family: "Playfair", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -35,7 +36,39 @@ p {
 
 a {
   text-decoration: underline;
-  color: #f307b4;
+  color: var(--accent-color);
+  font-family: var(--default-font-family);
+}
+
+.logo {
+  max-height: 40px;
+}
+
+nav {
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--accent-color);
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
 }
 
 .project-description {
@@ -173,6 +206,16 @@ footer {
     font-size: 23px;
   }
 
+  .logo {
+    max-height: 20px;
+  }
+
+  nav li {
+    margin-left: 8px;
+    line-height: 20px;
+    font-size: 14px;
+  }
+
   .project-description {
     display: block;
     text-align: center;
@@ -212,5 +255,11 @@ footer {
 
   .work-info-description {
     display: none;
+  }
+}
+
+@media (max-width: 360px) {
+  nav li {
+    font-size: 8px;
   }
 }
